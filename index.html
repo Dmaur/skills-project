@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="hfxCanKay.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="hfxCanKay.css">
     <meta charset="UTF-8">
@@ -11,10 +10,70 @@
 </head>
 <body>
     <script>
+        // hides the drop menu on load  
+        //gives the hamberger menu button a toggle in and out listener. 
         $(document).ready(function() {
-            console.log("ready");
-        });
-    </script>
+            $("#dropMen").hide();
+
+            })
+
+        $(document).ready(function() {
+                $("#hamButMen").click(function() {
+                $("#dropMen").toggle();
+                console.log("igotchew")
+                });
+
+            });
+     </script>
+    <header>
+        <div id="header">
+            <div id="topNav">
+                <button id="hamButMen"><img src="https://raw.githubusercontent.com/Zulinov/skillsProjects/main/hamburger.png" alt="Menu button"></button>
+                <h1 id="HFXCK">Halifax Canoe and Kayak</h1>
+                <img src="https://raw.githubusercontent.com/Zulinov/skillsProjects/main/paddle-white.png" alt="Halifax Canoe and Kyak logo">
+            </div>
+
+            <nav id="dropMen">
+                <ul id="nav">
+                    <li>Home</li>
+                    <li>Book Trip</li>
+                    <li>Admin Login</li>
+                </ul>
+            </nav>
+    </header>
+    <div id="mainContent">
+
+        <div id="mainImgBox">
+            <img src="https://raw.githubusercontent.com/Zulinov/skillsProjects/main/canoe.jpg" alt="Canoe on water picture">
+            <p>Come Experience <br/>Canada</p>
+        </div>
+        <br>
+        <main id="textArea">
+            <h2>Upcoming Adventures</h2>
+            <h3>Halifax</h3>
+            <p>Date: 2022-09-13</p>
+            <p>Diration: 4 days</p>
+            <h4>Summary</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius inventore dolor, doloremque impedit mollitia distinctio soluta id, nihil laborum minus neque explicabo tempora voluptatibus libero? Magni nihil autem sed obcaecati dolorum incidunt aut, quia tenetur libero ab eum asperiores culpa iste velit, aliquam sit inventore eligendi blanditiis quas a ducimus voluptates! Asperiores hic quo alias tempore soluta deleniti voluptatibus inventore, quos illum esse dolorem, porro laudantium animi fugiat quis aperiam assumenda pariatur? Numquam blanditiis, vero officiis cum sit itaque voluptatum, incidunt deserunt, veritatis quam delectus molestias. Voluptas eos excepturi laudantium maxime quaerat temporibus blanditiis sunt unde velit ratione nam nesciunt voluptatum quia aliquam eveniet possimus aperiam iste, commodi hic fugit cum. Deleniti quibusdam in sed tenetur dolorum quia sapiente, autem cumque rem sint.</p>
+            <h3>Sydney</h3>
+            <p>Date: 2022-09-13</p>
+            <p>Diration: 4 days</p>
+            <h4>Summary</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem molestias earum quos veniam voluptate id mollitia ex quam? Quisquam debitis vero aperiam est facere assumenda, excepturi fuga sed animi quia possimus ea minima commodi fugiat ab, magni facilis natus consequatur eum autem eligendi voluptatum! Culpa velit, aperiam possimus rerum ad pariatur aliquid repellat fuga ratione nemo, labore aliquam deleniti! Iste exercitationem facilis id sunt distinctio, temporibus cumque nemo ipsum accusamus, nam molestias libero atque, repudiandae laboriosam velit aperiam cupiditate maxime minima? Quod fugiat debitis at eum fuga quibusdam nulla, voluptatibus praesentium aspernatur tempore error odit quaerat, impedit excepturi! Beatae tempore magnam enim modi reiciendis, qui nesciunt repudiandae ducimus a voluptatem et, tempora laudantium quos aspernatur voluptatibus exercitationem fugit quidem porro eos accusamus impedit.</p>
+
+        </main>
+
+       
+
+        
+    </div>
+
+
     
 </body>
 </html>
+
+<!-- $(document).ready(function() {
+           
+
+}); -->
