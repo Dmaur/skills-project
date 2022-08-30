@@ -14,7 +14,7 @@ html {
   height: 50px;
 }
 
-#HFXCK {
+h1 {
   padding-top: 0.25rem;
   color: #ffffff;
   font-family: sans-serif;
@@ -131,4 +131,35 @@ html {
 
 #textArea p {
     font-family: sans-serif;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  h1 {
+    font-size: 20px;
+    
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  h1{
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #mainImgBox p {
+    color: #080808;
+    position: absolute;
+    font-size: 4.8vw;
+    margin-top: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    width: 100%;
+    opacity: 1;
+}
+
+
+
 }
